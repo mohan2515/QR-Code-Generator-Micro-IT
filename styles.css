@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #f6d365, #fda085, #fbc2eb, #a6c1ee);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #fff;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  text-shadow: 2px 2px #333;
+}
+
+input[type="text"], input[type="color"], select {
+  padding: 10px;
+  width: 80%;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #ff6b81;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+#qrcode {
+  margin-top: 20px;
+  transition: box-shadow 0.5s;
+}
+
+#qrcode:hover {
+  box-shadow: 0 0 30px #ff6b81;
+}
+
+canvas {
+  border-radius: 8px;
+}

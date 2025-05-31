@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Super QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Super QR Code Generator</h1>
+
+    <input type="text" id="text" placeholder="Enter text or URL" >
+
+    <label for="size">Select Size</label>
+    <select id="size">
+      <option value="150">Small (150px)</option>
+      <option value="200" selected>Medium (200px)</option>
+      <option value="250">Large (250px)</option>
+    </select>
+
+    <label for="darkColor">Dark Color</label>
+    <input type="color" id="darkColor" value="#ff6b81" />
+
+    <label for="lightColor">Light Color</label>
+    <input type="color" id="lightColor" value="#ffffff" />
+
+    <label for="logoInput">Upload Logo (optional)</label>
+    <input type="file" id="logoInput" accept="image/*" />
+
+    <button onclick="generateQR()">Generate QR</button>
+    <button onclick="downloadQR()">Download QR</button>
+
+    <div id="qrcode"></div>
+  </div>
+
+  <!-- QRCodeStyling Library -->
+  <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
